@@ -47,6 +47,7 @@ export default function ReportsPage() {
   }, [txs, products, todayRange]);
 
   // -------------------- TOP PRODUCTS --------------------
+<<<<<<< HEAD
 type TopProduct = { name: string; qty: number };
 
 const topProducts: TopProduct[] = useMemo(() => {
@@ -67,6 +68,22 @@ const topProducts: TopProduct[] = useMemo(() => {
     .slice(0, 5);
 }, [txs, products]);
 
+=======
+  const topProducts = useMemo(() => {
+    const map: any = {};
+    txs.filter(t => t.type === "OUT").forEach(t => {
+      map[t.productId] = (map[t.productId] || 0) + t.qty;
+    });
+
+    return Object.entries(map)
+      .map(([id, qty]) => ({
+        name: products.find(p => p.id === id)?.name || "-",
+        qty
+      }))
+      .sort((a: any, b: any) => b.qty - a.qty)
+      .slice(0, 5);
+  }, [txs, products]);
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
 
   // -------------------- PDF EXPORT --------------------
   const exportPDF = () => {

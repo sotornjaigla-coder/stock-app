@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getDashboardSummary, formatTxLabel, loadTxs } from "@/lib/store";
 import {
+<<<<<<< HEAD
   LineChart,
   Line,
   XAxis,
@@ -13,6 +14,10 @@ import {
   Tooltip,
   ResponsiveContainer,
   CartesianGrid,
+=======
+  LineChart, Line, XAxis, YAxis, Tooltip,
+  ResponsiveContainer, CartesianGrid,
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
 } from "recharts";
 
 export default function DashboardPage() {
@@ -70,6 +75,10 @@ export default function DashboardPage() {
         <SummaryCard title="สินค้าทั้งหมด" value={data.totalProducts} />
         <SummaryCard title="ใกล้หมด" value={data.lowStockCount} red />
         <SummaryCard title="รับเข้า (วันนี้)" value={`+${data.inToday}`} />
+<<<<<<< HEAD
+=======
+        {/* ✅ เอาเครื่องหมายลบออก */}
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
         <SummaryCard
           title="ขายออก (วันนี้)"
           value={`฿${data.outToday.toLocaleString()} บาท`}
@@ -87,6 +96,7 @@ export default function DashboardPage() {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="day" />
                 <YAxis />
+<<<<<<< HEAD
                 {/* ✅ FIX TYPE ERROR */}
                 <Tooltip
   formatter={(value, name) => [
@@ -95,6 +105,9 @@ export default function DashboardPage() {
   ]}
 />
 
+=======
+                <Tooltip formatter={(v:number)=>`฿${v.toLocaleString()} บาท`} />
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
                 <Line type="monotone" dataKey="sales" stroke="#2563eb" strokeWidth={3} />
               </LineChart>
             </ResponsiveContainer>
@@ -112,6 +125,11 @@ export default function DashboardPage() {
               .filter(p => p.stock <= p.minStock)
               .map(p => (
                 <div key={p.id} className="rounded-xl border bg-white p-3">
+<<<<<<< HEAD
+=======
+
+                  {/* ⭐ FIX รูปไม่หลุดกรอบ */}
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
                   <div className="w-full aspect-square overflow-hidden rounded-lg border bg-slate-50 relative">
                     {p.image ? (
                       <Image

@@ -30,13 +30,17 @@ export default function LedgerPage() {
       setProducts(loadProducts());
       setLedger(loadLedger());
     };
+<<<<<<< HEAD
 
+=======
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
     window.addEventListener("focus", onFocus);
     return () => window.removeEventListener("focus", onFocus);
   }, []);
 
   const rows = useMemo(() => {
     const keyword = q.trim().toLowerCase();
+<<<<<<< HEAD
     return ledger.filter((r: any) => {
       if (type !== "ALL" && r.type !== type) return false;
 
@@ -44,6 +48,13 @@ export default function LedgerPage() {
       const name = (p?.name ?? "").toLowerCase();
       const sku = (p?.sku ?? "").toLowerCase();
 
+=======
+    return ledger.filter((r) => {
+      if (type !== "ALL" && r.type !== type) return false;
+      const p = products.find((x) => x.id === r.productId);
+      const name = (p?.name ?? "").toLowerCase();
+      const sku = (p?.sku ?? "").toLowerCase();
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
       return !keyword || name.includes(keyword) || sku.includes(keyword);
     });
   }, [ledger, products, q, type]);
@@ -88,6 +99,7 @@ export default function LedgerPage() {
             </div>
 
             <div className="flex items-end gap-2">
+<<<<<<< HEAD
               <Button
                 variant="secondary"
                 onClick={() => {
@@ -100,6 +112,14 @@ export default function LedgerPage() {
 
               <Button
                 onClick={() => {
+=======
+              <Button variant="secondary" onClick={() => { setQ(""); setType("ALL"); }}>
+                ล้างตัวกรอง
+              </Button>
+              <Button
+                onClick={() => {
+                  // refresh
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
                   setProducts(loadProducts());
                   setLedger(loadLedger());
                 }}
@@ -110,9 +130,14 @@ export default function LedgerPage() {
           </div>
 
           <div className="mt-4 space-y-2">
+<<<<<<< HEAD
             {rows.slice(0, 100).map((r: any) => {
               const p = products.find((x) => x.id === r.productId);
 
+=======
+            {rows.slice(0, 100).map((r) => {
+              const p = products.find((x) => x.id === r.productId);
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
               return (
                 <div
                   key={r.id}
@@ -122,11 +147,17 @@ export default function LedgerPage() {
                     <div className="font-semibold">
                       {formatType(r.type)} — {p?.name ?? "-"}
                     </div>
+<<<<<<< HEAD
 
                     <div className="text-xs text-slate-500">
                       SKU: {p?.sku ?? "-"} | ก่อน: {r.beforeStock} → หลัง:{" "}
                       {r.afterStock} | อ้างอิง: {r.refType ?? "-"}{" "}
                       {r.refId ? `(${r.refId.slice(0, 8)})` : ""}
+=======
+                    <div className="text-xs text-slate-500">
+                      SKU: {p?.sku ?? "-"} | ก่อน: {r.beforeStock} → หลัง:{" "}
+                      {r.afterStock} | อ้างอิง: {r.refType ?? "-"} {r.refId ? `(${r.refId.slice(0,8)})` : ""}
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
                     </div>
                   </div>
 

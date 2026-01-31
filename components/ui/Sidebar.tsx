@@ -50,9 +50,15 @@ export default function Sidebar() {
       </nav>
 
       <div className="mt-6 rounded-xl border bg-slate-50 p-3 text-xs text-slate-600">
+<<<<<<< HEAD
         <div className="font-semibold">stock</div>
         <div className="mt-1">
           
+=======
+        <div className="font-semibold">Tips</div>
+        <div className="mt-1">
+          เริ่มจากเพิ่มสินค้าในเมนู “สินค้า” ก่อน แล้วค่อยรับเข้า/เบิกออก
+>>>>>>> a2fad253fba2f1bb84a19a2035dd48566999226c
         </div>
       </div>
     </aside>
