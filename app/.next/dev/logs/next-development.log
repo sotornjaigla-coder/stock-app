@@ -1,0 +1,672 @@
+[00:00:01.885] Server  LOG     ✓ Ready in 1369ms
+[00:00:03.946] Server  ERROR   ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:05.131] Browser ERROR   uncaughtError: Error: ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:05.307] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:05.307] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.173] Server  ERROR   ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:12.304] Browser ERROR   uncaughtError: Error: ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:12.457] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.457] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve '../components/Sidebar'
+  1 | import "./globals.css";
+> 2 | import Sidebar from "../components/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Stock App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:29.566] Server  LOG     ✓ Compiled in 125ms
+[00:02:30.935] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:26.869] Server  LOG     ✓ Compiled in 309ms
+[00:08:40.936] Server  LOG     ✓ Compiled in 43ms
+[00:08:48.766] Server  LOG     ✓ Compiled in 38ms
+[00:08:55.254] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:56.596] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:08:56.596] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:10:21.145] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:30.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:44.661] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:45.099] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:33.531] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:14:33.531] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:14:33.531] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:14:33.531] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:00.620] Server  LOG     ✓ Compiled in 95ms
+[00:15:01.520] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-in/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockInPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-in/page.tsx [Client Component Browser]
+    ./app/stock-in/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-in/page.tsx [Client Component SSR]
+    ./app/stock-in/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:01.520] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:45.067] Server  LOG     ✓ Compiled in 42ms
+[00:15:45.530] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:45.530] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:45.530] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-client] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:15:45.530] Browser ERROR   ./app/stock-out/page.tsx:8:1
+Export adjustStock doesn't exist in target module
+   6 | import { Input } from "@/components/ui/input";
+   7 |
+>  8 | import { Product, adjustStock, loadProducts } from "@/lib/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export default function StockOutPage() {
+  11 |   const [products, setProducts] = useState<Product[]>([]);
+
+The export adjustStock was not found in module [project]/lib/store.ts [app-ssr] (ecmascript).
+Did you mean to import adjustStockWithTx?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/stock-out/page.tsx [Client Component Browser]
+    ./app/stock-out/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/stock-out/page.tsx [Client Component SSR]
+    ./app/stock-out/page.tsx [Server Component]
+[00:16:55.939] Server  LOG     ✓ Compiled in 102ms
+[00:17:59.443] Server  LOG     ✓ Compiled in 36ms
+[00:18:02.169] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:35.203] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:18:35.203] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:19:15.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:15.377] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+            <SegmentViewNode type="page" pagePath="dashboard/...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                <DashboardPage params={Promise} searchParams={Promise}>
+                  <div className="space-y-6">
+                    <div>
+                    <div className="grid grid-...">
+                      <Card className="rounded-2xl">
+                        <div data-slot="card" className="bg-card te...">
+                          <CardContent className="p-4">
+                            <div data-slot="card-content" className="p-4">
+                              <div>
+                              <div className="mt-1 text-2xl font-bold">
++                               1
+-                               0
+                      ...
+                    ...
+            ...
+          ...
+
+[00:19:28.892] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:19:28.893] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:19:52.527] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:52.654] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+            <SegmentViewNode type="page" pagePath="dashboard/...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                <DashboardPage params={Promise} searchParams={Promise}>
+                  <div className="space-y-6">
+                    <div>
+                    <div className="grid grid-...">
+                      <Card className="rounded-2xl">
+                        <div data-slot="card" className="bg-card te...">
+                          <CardContent className="p-4">
+                            <div data-slot="card-content" className="p-4">
+                              <div>
+                              <div className="mt-1 text-2xl font-bold">
++                               2
+-                               0
+                      ...
+                    ...
+            ...
+          ...
+
+[00:20:04.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:04.225] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+            <SegmentViewNode type="page" pagePath="dashboard/...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                <DashboardPage params={Promise} searchParams={Promise}>
+                  <div className="space-y-6">
+                    <div>
+                    <div className="grid grid-...">
+                      <Card className="rounded-2xl">
+                        <div data-slot="card" className="bg-card te...">
+                          <CardContent className="p-4">
+                            <div data-slot="card-content" className="p-4">
+                              <div>
+                              <div className="mt-1 text-2xl font-bold">
++                               2
+-                               0
+                      ...
+                    ...
+            ...
+          ...
+
